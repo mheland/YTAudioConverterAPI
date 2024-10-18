@@ -110,7 +110,7 @@ def generate(host_url, video_url):
 
             response_dict = {
                 'img': thumbnail_url,
-                'direct_link': f"{os.getenv('BASE_URL', 'https://extract.velocityflow.net')}/mp3/{file_name}",
+                'direct_link': f"{os.getenv('BASE_URL', 'https://example.com')}/mp3/{file_name}",
                 'expiration_timestamp': expiration_timestamp
             }
             response_json = json.dumps(response_dict)
